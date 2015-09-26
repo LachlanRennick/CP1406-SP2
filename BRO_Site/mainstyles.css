@@ -2,15 +2,18 @@
 body {
 	
 }
+
 /*This div features the Nav Bar*/
 #nav {
 	height: 22px;
 	background-color: #000000;
 	margin-right:2px;
+	margin-top:40px;
 	padding-top: 2px;
 	padding-bottom: 0px;
 	padding-right:250px;
 	float:right;
+	clear:both;
 	
 }
 #nav ul {
@@ -50,7 +53,7 @@ body {
 	height: 25px;
 	background-color: #FFFFFF;
 	margin-left: 1100px;
-	margin-top:10px;
+	margin-top:-50px;
 	padding-top: 2px;
 	padding-bottom: 0px;
 	padding-right:20px;
