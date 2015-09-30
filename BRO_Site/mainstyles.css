@@ -2,9 +2,22 @@
 body {
 	
 }
+/*- Century Gothic (regular) for the navigation bar and the footer
+- Tahoma (bold) for the “Book tickets”/“Donate” buttons
+- Minion Pro (italic, bold, regular…) for all the rest*/
+a {
+	text-decoration: none;
+	color:#000000;	
+}
+a:hover {
+    opacity: 0.65;
+    filter: alpha(opacity=65); /* For IE8 and earlier */
+} 
 
 /*This div features the Nav Bar*/
+/*To make responsive change padding to 0 when screen is to small. When screen is too small again change menu to symbol with dropdown...?*/
 #nav {
+	
 	height: 22px;
 	background-color: #000000;
 	margin-right:2px;
@@ -41,23 +54,18 @@ body {
 #nav li {
 	display:inline;
 }
-/*Allows for the anchor(a) block to change colour when hovered over*/
-#nav a:hover/*, #nav a:visited*/ {
-	color: #AF9C9C;
-	/*color: #000000;
-	background-color:#FFFFFF;*/
-}
 
 /*This div features the Nav Bar*/
 #navBelow {
 	height: 25px;
 	background-color: #FFFFFF;
-	margin-left: 1100px;
-	margin-top:-50px;
+	/*margin-left: px;*/
+	margin-top:15px;
 	padding-top: 2px;
 	padding-bottom: 0px;
 	padding-right:20px;
 	float:right;
+	clear:both;
 }
 #navBelow ul {
     list-style-type: none;
@@ -89,52 +97,54 @@ body {
 	margin-left:5px; 	
 }
 
-#navBelow a:hover/*, #nav a:visited*/ {
-	color: #AF9C9C;
-}
 
+/*To make responsive make padding/margin on either side smaller. Eventually (when menu is turned into symbol) make two colums with no padding/margins. For phone make one single colum with no margin or padding*/
 #sectionTop {
 	margin-right:auto;
 	margin-left:auto;
 	width:90%;
 	text-align:center;
-	
+	clear:both;
 }
-#sect1 {
+
+#sectionTop a:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+
+}
+#sect1 a {
 	width:390px;
 	height:200px;
 	background-color:#00FBFF;
 	float:left;
 	margin-top:50px;
+	margin-left:37px;
+	margin-right:37px;
 	border-style: solid;
 	border-width:thin; 
-	
 }
+ 
 
-/*NEED JAVASCRIPT*/
-/*
-#sect1 hover {
-	background-color:#287A7E;
-	
-}*/
-#sect2 {
+#sect2 a {
 	width:390px;
 	height:200px;
 	background-color:#B7A066;
 	float:left;
 	margin-top:50px;
-	margin-left:75px;
-	margin-right:75px;
+	margin-left:37px;
+	margin-right:37px;
 	border-style: solid;
 	border-width:thin; 
 	
 }
-#sect3 {
+#sect3 a {
 	width:390px;
 	height:200px;
 	background-color:#15738B;
 	float:left;
 	margin-top:50px;
+	margin-left:37px;
+	margin-right:37px;
 	border-style: solid;
 	border-width:thin; 
 	
@@ -145,34 +155,43 @@ body {
 	width:90%;
 	text-align:center;
 }
-#sect4 {
+#sectionBottom a:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+
+}
+#sect4 a {
 	width:390px;
 	height:200px;
 	background-color:#804D4E;
 	float:left;
 	margin-top:50px;
+	margin-left:37px;
+	margin-right:37px;
 	border-style: solid;
 	border-width:thin; 
 	
 }
-#sect5 {
+#sect5 a {
 	width:390px;
 	height:200px;
 	background-color:#7F3A8B;
 	float:left;
 	margin-top:50px;
-	margin-right:75px;
-	margin-left:75px;
+	margin-left:37px;
+	margin-right:37px;
 	border-style: solid;
 	border-width:thin; 
 	
 }
-#sect6 {
+#sect6 a {
 	width:390px;
 	height:200px;
 	background-color:#D14FE3;
 	float:left;
 	margin-top:50px;
+	margin-left:37px;
+	margin-right:37px;
 	border-style: solid;
 	border-width:thin; 
 	margin-bottom:50px;
@@ -228,10 +247,6 @@ footer a img {
 	
 }
 
-#footer a:hover {
-	color: #AF9C9C;
-		
-}
 #footerFB a {
 	border-right:none;
 }
