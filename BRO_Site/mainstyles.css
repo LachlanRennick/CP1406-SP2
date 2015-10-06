@@ -1,7 +1,10 @@
 @charset "utf-8";
-/*Possibly make logo into its own div and use position:absolute as it doesn't move. This could also stop float issues with lower nav bar when resizing window...?*/
 body {
 	
+}
+/*Possibly make logo into its own div and use position:absolute as it doesn't move. This could also stop float issues with lower nav bar when resizing window...?*/
+#logo {
+	position:absolute;	
 }
 /*Below is proposed fonts.. need to find more well used fonts to be sure it is available on most systems*/
 /*- Century Gothic (regular) for the navigation bar and the footer
@@ -123,6 +126,7 @@ a:hover {
 		margin-right:37px;	
 		}
 	}
+
 @media (min-width: 1660px) {
 		#sectionBottom a {
 		margin-left:37px;
