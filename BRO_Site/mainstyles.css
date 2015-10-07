@@ -2,6 +2,14 @@
 body {
 	
 }
+body a {
+	text-decoration: none;
+	color:#000000;	
+}
+body a:hover {
+    opacity: 0.65;
+    filter: alpha(opacity=65); /* For IE8 and earlier */
+} 
 /*Possibly make logo into its own div and use position:absolute as it doesn't move. This could also stop float issues with lower nav bar when resizing window...?*/
 #logo {
 	position:absolute;	
@@ -10,14 +18,7 @@ body {
 /*- Century Gothic (regular) for the navigation bar and the footer
 - Tahoma (bold) for the “Book tickets”/“Donate” buttons
 - Minion Pro (italic, bold, regular…) for all the rest*/
-a {
-	text-decoration: none;
-	color:#000000;	
-}
-a:hover {
-    opacity: 0.65;
-    filter: alpha(opacity=65); /* For IE8 and earlier */
-} 
+
 
 /*This div features the Nav Bar*/
 /*To make responsive change padding to 0 when screen is to small. When screen is too small again change menu to symbol with dropdown...?*/
@@ -110,7 +111,7 @@ a:hover {
 #sectionTop {
 	margin-right:auto;
 	margin-left:auto;
-	width:86%;
+	width:100%;
 	text-align:center;
 	clear:both;
 }
@@ -120,7 +121,7 @@ a:hover {
     filter: alpha(opacity=80); /* For IE8 and earlier */
 
 }
-@media (min-width: 1660px) {
+/*@media (min-width: 1660px) {
 		#sectionTop a {
 		margin-left:37px;
 		margin-right:37px;	
@@ -133,10 +134,39 @@ a:hover {
 		margin-right:37px;	
 		}
 	}
+/* Widescreen */
+@media (min-width: 1285px) {
+	.col-wide a {
+		float: left;
+		width: 30%;
+        margin-left:2.5em;
+	}
+}
+/*Normal monitor size*/
+@media (min-width: 992px) and (max-width: 1284px) {
+	.col-norm a {
+		float: left;
+		width: 30%;
+		margin-left:1em;
+		/*background-color: lightpink;*/
+	}
+}
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-tablet a {
+		float: left;
+		width: 48%;
+	}
+}
+@media (max-width: 767px) {
+	.col-tablet a {
+		float: left;
+		width: 96%;
+	}
+}
 #sectionTop a {
-	width:390px;
+	/*width:390px;*/
 	height:200px;
-	background-color:#00FBFF;
 	float:left;
 	margin-top:50px;
 	border-style: solid;
@@ -145,33 +175,11 @@ a:hover {
 #sect1 a {
 	background-color:#00FBFF; 
 }
- 
-
 #sect2 a {
 	background-color:#B7A066;
 }
 #sect3 a {
 	background-color:#15738B;
-}
-#sectionBottom {
-	margin-right:auto;
-	margin-left:auto;
-	width:86%;
-	text-align:center;
-}
-#sectionBottom a {
-	width:390px;
-	height:200px;
-	float:left;
-	margin-top:50px;
-	border-style: solid;
-	border-width:thin; 
-		
-}
-#sectionBottom a:hover {
-    opacity: 0.8;
-    filter: alpha(opacity=80); /* For IE8 and earlier */
-
 }
 #sect4 a {
 	background-color:#804D4E;
