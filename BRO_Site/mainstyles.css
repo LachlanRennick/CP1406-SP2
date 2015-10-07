@@ -247,3 +247,13 @@ footer a img {
 #footerFB img {
 	vertical-align:middle;
 }
+
+#leftcolumn{
+    text-align: left;
+}
+
+#whatsontitle {
+    line-height: inherit;
+    background-color: : aqua;
+    text-align: left;
+}
