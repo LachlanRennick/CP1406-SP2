@@ -1,0 +1,332 @@
+@charset "utf-8";
+body {
+}
+body a {
+	text-decoration: none;
+	color:#000000;	
+}
+body a:hover {
+    opacity: 0.65;
+    filter: alpha(opacity=65); /* For IE8 and earlier */
+} 
+#logo {
+	position:absolute;	
+}
+/*Below is proposed fonts.. need to find more well used fonts to be sure it is available on most systems
+- Century Gothic (regular) for the navigation bar and the footer
+- Tahoma (bold) for the “Book tickets”/“Donate” buttons
+- Minion Pro (italic, bold, regular…) for all the rest
+*/
+
+/*This div features the Nav Bar*/
+/*When screen is too small again change menu to symbol with dropdown...?*/
+/*Can use java to create dynamic drop-down but is it supported in mobiles?*/
+@media (min-width: 1280px) {
+		.large-screen {
+		padding-right:250px;
+		background-color: #000000;	
+		}
+	}
+/*Need to change 900px when appropiate size is found (this is location where nav bar collides with logo*/
+@media (min-width: 900px) and (max-width: 1279px) {
+		.medium-screen {
+		padding-right:0px;
+		background-color: #000000;	
+		}
+	}
+#nav {
+	height: 22px;
+	background-color: #000000;
+	margin-right:2px;
+	margin-top:40px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	float:right;
+	clear:both;
+	
+}
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+	padding-left:4px;
+}
+#nav a {
+	color: #FFFFFF;
+	height: 25px;
+	width: 185px;
+	background-color: #000000;
+	text-align: center;
+	margin-left: 0px;
+	border-style: none solid none none;
+	border-color: #FFFFFF;
+	border-right-width: thin;
+	margin-top: 3px;
+	padding-left: 2px;
+	padding-right:6px;
+}
+#nav li {
+	display:inline;
+}
+/*This div features the Navigation controls below the primary nav bar*/
+#navBelow {
+	height: 25px;
+	background-color: #FFFFFF;
+	margin-top:15px;
+	margin-bottom:40px;
+	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-right:20px;
+	float:right;
+	clear:both;
+}
+#navBelow ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+	padding-left:4px;
+}
+#navBelow a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	
+	
+}
+#navBelow li {
+	display:inline;
+	background-color: #000000;
+	margin-top: 3px;
+	margin-left:5px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top:4px;
+	padding-bottom:4px;
+	
+}
+#navBelow img {
+	vertical-align: middle;
+	margin-bottom:5px;
+	margin-left:5px; 	
+}
+#sectionTop {
+	margin-right:auto;
+	margin-left:auto;
+	width:100%;
+	text-align:center;
+	clear:both;
+}
+#sectionTop a:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+/* Widescreen */
+@media (min-width: 1285px) {
+	.col-wide a {
+		float: left;
+		width: 30%;
+        margin-left:2.5em;
+	}
+}
+/*Normal monitor size*/
+@media (min-width: 992px) and (max-width: 1284px) {
+	.col-norm a {
+		float: left;
+		width: 30%;
+		margin-left:1em;
+	}
+}
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-tablet a {
+		float: left;
+		width: 48%;
+	}
+}
+@media (max-width: 767px) {
+	.col-tablet a {
+		float: left;
+		width: 96%;
+	}
+}
+/*Used Lindsey's code to help^*/
+#sectionTop a {
+	height:200px;
+	float:left;
+	margin-top:50px;
+	border-style: solid;
+	border-width:thin; 	
+}
+#sect1 a {
+	background-color:#00FBFF; 
+}
+#sect2 a {
+	background-color:#B7A066;
+}
+#sect3 a {
+	background-color:#15738B;
+}
+#sect4 a {
+	background-color:#804D4E;
+}
+#sect5 a {
+	background-color:#7F3A8B;
+}
+#sect6 a {
+	background-color:#D14FE3;
+	margin-bottom:50px;
+}
+#footer {
+	height: 40px;
+	background-color:#000000;
+	margin-left:-8px;
+	padding-bottom: 0px;
+	padding-right:17px;
+	clear:both;
+	width:100%;
+}
+footer a img {
+	
+	vertical-align:middle;
+	margin-left:5px;
+	padding-top:10px; 	
+}
+#footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+	padding-left:4px;
+	width: 100%;
+}
+#footer a {
+	display:block;
+	color: #FFFFFF;
+	height: 23px;
+	width: 99%;
+	background-color: #000000;
+	text-decoration: none;
+	text-align: center;
+	margin-top:7px;
+	margin-left: 0px;
+	border-right:solid;
+	border-color: #FFFFFF;
+	border-right-width: thin;
+	padding-top:4px;
+	padding-left: 2px;
+	padding-right:6px;
+}
+#footer li {
+	float:left;
+	width: 33%;
+	margin-left:0.3%;
+}
+#footerFB a {
+	border-right:none;
+}
+#footerFB img {
+	vertical-align:middle;
+}
+@media (min-width: 768px) {
+    span.small {display:none}
+}
+@media (max-width: 767px) {
+    span.large {display:none}
+}
+/*need to apply responsive features*/
+/*Plan on making <em> writing vanish when size to small using <span> classes same as the footer*/
+#stripSection {
+	
+}
+#stripSection h1 {
+	float:left;	
+	margin-left:10px;
+	padding-right:10px;
+	padding-top:15px;
+}
+#stripSection img {
+	float:left;	
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:40px;
+}
+#stripSection p {
+	float:left;	
+	padding-left:150px;
+	padding-top:27px;
+}
+@media (max-width: 950px) {
+    span.lrg {display:none}
+}
+.whatsOnSection {
+	background-color:#00FBFF;
+	height:110px;
+	clear:both;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+.watchSection {
+	background-color:#B7A066;
+	height:110px;
+	clear:both;
+	margin-left:-8px;
+	margin-right:-8px;
+	}
+.ticketSection {
+	background-color:#15738B;
+	height:110px;
+	clear:both;
+	margin-left:-8px;
+	margin-right:-8px;
+	}
+.supportSection {
+	background-color:#804D4E;
+	height:110px;
+	clear:both;
+	margin-left:-8px;
+	margin-right:-8px;
+	}
+.performersSection {
+	background-color:#7F3A8B;
+	height:110px;
+	clear:both;
+	margin-left:-8px;
+	margin-right:-8px;
+	}
+.aboutUsSection {
+	background-color:#D14FE3;
+	height:110px;
+	clear:both;
+	margin-left:-8px;
+	margin-right:-8px;
+	}
+.section {
+	float:left;
+	clear:left;
+}
+.section h2 {
+	float:left;
+	clear:left;
+	background-color:#000000;
+	color:#FFFFFF;
+	padding-right:5px;
+	padding-left:5px;
+}
+.section img {	
+	float:left;
+	clear:left;
+}
+.anouncements {	
+	height:300px;
+	margin-bottom:10px;
+	float:left;
+}
+
+.anouncements h3 {	
+	padding-left:10px;
+}
+.anouncements h4 {	
+	padding-left:10px;
+}
+.anouncements p {	
+	padding-left:10px;
+}
