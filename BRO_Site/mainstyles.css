@@ -177,6 +177,7 @@ body a:hover {
 	margin-bottom:50px;
 }
 #footer {
+	
 	height: 40px;
 	background-color:#000000;
 	margin-left:-8px;
@@ -316,8 +317,8 @@ footer a img {
 	clear:left;
 }
 .anouncements {	
-	height:300px;
-	margin-bottom:10px;
+	width:1000px;
+	margin-bottom:25px;
 	float:left;
 }
 
