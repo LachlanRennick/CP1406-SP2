@@ -74,20 +74,21 @@ body a:hover {
 	display:inline;
 }
 /*This is for the dropdown -- screen size is less then 999 pixels*/
+nav img {
+	margin-left:120px;	
+}
 nav ul ul {
 	display: none;
 }
-
 	nav ul li:hover > ul {
 		display: block;
 	}
-	nav ul {
-		width:11em;
-		background: #fff; 
+	nav ul { 
 		list-style: none;
 		float:right;
 		position: relative;
 		display: inline-table;
+		padding-left:0px;
 }
 	nav ul:after {
 		content: ""; clear: both; display: block;
@@ -95,24 +96,24 @@ nav ul ul {
 	nav ul li {
 		float: left;
 }
-	nav ul li:hover {
-		background: #ffffff;
-	}
+	
 		nav ul li:hover a {
 			color: #000000;
 		}
 	
 	nav ul li a {
-		display: block; padding-top: 5px;
-		color: #ffffff; text-decoration: none;
+		display: block; 
+		color: #ffffff; 
+		text-decoration: none;
 		
 	}
 	nav ul ul {
-	background: #ffffff; 
-	border-radius: 0px; 
-	padding: 0;
-	position: absolute; 
-	top: 100%;
+		width:11em;
+		background: #ffffff; 
+		border-radius: 0px; 
+		padding: 0;
+		position: absolute; 
+		top: 100%;
 }
 	nav ul ul li {
 		float: none; 
@@ -135,14 +136,37 @@ nav ul ul ul {
 /*Thanks to Iggy*/
 /*How to make a dropdown using pure css -- http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu*/
 /*This div features the Navigation controls below the primary nav bar*/
+@media (min-width: 400px) {
+		
+		.med {
+			margin-top:15px;
+		}
+			.med li {
+				margin-left:5px;	
+			}
+			.med img {
+				margin-left:5px;	
+			}
+	}
+/*Need to change 900px when appropiate size is found (this is location where nav bar collides with logo*/
+@media (max-width: 399px) {
+		.sml {
+			margin-top:55px;
+		}
+			.sml li {
+				margin-left:2px;	
+			}
+			.sml img {
+				margin-left:2px;	
+			}
+	}
 #navBelow {
 	height: 25px;
+	padding-right:20px;
 	background-color: #FFFFFF;
-	margin-top:15px;
 	margin-bottom:40px;
 	padding-top: 2px;
 	padding-bottom: 0px;
-	padding-right:20px;
 	float:right;
 	clear:both;
 }
@@ -156,14 +180,11 @@ nav ul ul ul {
 	color: #FFFFFF;
 	text-decoration: none;
 	text-align: center;
-	
-	
 }
 #navBelow li {
 	display:inline;
 	background-color: #000000;
 	margin-top: 3px;
-	margin-left:5px;
 	padding-left: 6px;
 	padding-right: 6px;
 	padding-top:4px;
@@ -172,8 +193,7 @@ nav ul ul ul {
 }
 #navBelow img {
 	vertical-align: middle;
-	margin-bottom:5px;
-	margin-left:5px; 	
+	margin-bottom:5px; 	
 }
 #sectionTop {
 	margin-right:auto;
@@ -252,12 +272,6 @@ nav ul ul ul {
 	clear:both;
 	width:100%;
 }
-footer a img {
-	
-	vertical-align:middle;
-	margin-left:5px;
-	padding-top:10px; 	
-}
 #footer ul {
     list-style-type: none;
     margin: 0;
@@ -292,6 +306,7 @@ footer a img {
 }
 #footerFB img {
 	vertical-align:middle;
+	margin-top:-6px;
 }
 @media (min-width: 768px) {
     span.small {display:none}
