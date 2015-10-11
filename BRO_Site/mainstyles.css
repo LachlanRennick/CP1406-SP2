@@ -22,18 +22,23 @@ body a:hover {
 /*When screen is too small again change menu to symbol with dropdown...?*/
 /*Can use java to create dynamic drop-down but is it supported in mobiles?*/
 @media (min-width: 1280px) {
+		span.sml-screen {display:none}
 		.large-screen {
 		padding-right:250px;
 		background-color: #000000;	
 		}
 	}
 /*Need to change 900px when appropiate size is found (this is location where nav bar collides with logo*/
-@media (min-width: 900px) and (max-width: 1279px) {
+@media (min-width: 1000px) and (max-width: 1279px) {
+		span.sml-screen {display:none}
 		.medium-screen {
 		padding-right:0px;
 		background-color: #000000;	
 		}
 	}
+@media (max-width: 999px) {
+    span.lrg-screen {display:none}
+}
 #nav {
 	height: 22px;
 	background-color: #000000;
@@ -68,6 +73,67 @@ body a:hover {
 #nav li {
 	display:inline;
 }
+/*This is for the dropdown -- screen size is less then 999 pixels*/
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+	nav ul {
+		width:11em;
+		background: #fff; 
+		list-style: none;
+		float:right;
+		position: relative;
+		display: inline-table;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+	nav ul li {
+		float: left;
+}
+	nav ul li:hover {
+		background: #ffffff;
+	}
+		nav ul li:hover a {
+			color: #000000;
+		}
+	
+	nav ul li a {
+		display: block; padding-top: 5px;
+		color: #ffffff; text-decoration: none;
+		
+	}
+	nav ul ul {
+	background: #ffffff; 
+	border-radius: 0px; 
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		position: relative;
+	}
+		nav ul ul li a {
+			padding: 15px 15px;
+			color: #ffffff;
+		}	
+			nav ul ul li a:hover {
+				background: #000000;
+				color:#ffffff;
+			}
+nav ul ul ul {
+	position: absolute;  top:0;
+}
+
+/*Thanks to Iggy*/
+/*How to make a dropdown using pure css -- http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu*/
 /*This div features the Navigation controls below the primary nav bar*/
 #navBelow {
 	height: 25px;
