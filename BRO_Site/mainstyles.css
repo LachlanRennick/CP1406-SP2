@@ -315,8 +315,6 @@ nav ul ul ul {
 @media (max-width: 767px) {
     span.large {display:none}
 }
-/*need to apply responsive features*/
-/*Plan on making <em> writing vanish when size to small using <span> classes same as the footer*/
 @media (min-width: 400px) {
 		#stripSection {
 			padding-top:150px;	
@@ -401,7 +399,9 @@ nav ul ul ul {
 	margin-right:-8px;	
 }
 .section {
+	padding-top:20px;
 	margin-top:250px;
+	margin-bottom:390px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 95%;
@@ -445,7 +445,6 @@ nav ul ul ul {
 	position:fixed;
     top:0;
     width:100%;
-    height:40px;
     margin:0px;	
 	background-color:#fff;
 	height:200px;
@@ -455,9 +454,8 @@ nav ul ul ul {
 	position:fixed;
     top:0;
     width:100%;
-    height:40px;
     margin:0px;	
 	background-color:#fff;
 	height:150px;
-	margin-top:10px;
+	padding-top:10px;
 }
