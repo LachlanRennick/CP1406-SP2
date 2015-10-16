@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <title>BRO - HOME</title>
 <link href="mainstyles.css" rel="stylesheet" type="text/css">
-    <link href="calendar.css" rel="stylesheet" type="text/css">
+<link href="calendar.css" rel="stylesheet" type="text/css">
 <script src="scripts.js"></script>
 </head>
 
 <body>
-<!--Need to make navbar into different menu selection when window is small?-->
+<!--Code to connect and sync with Facebook - also allows for access to facebook data-->
 <script>
     window.fbAsyncInit = function() {
         FB.init({
@@ -45,53 +45,56 @@
         dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     });
 </script>
-<div id="logo">
-	<a href="index.html">
-		<img src="Images/Home/LOGO.png" alt="Logo">
-    </a>
-</div>
-<span class="lrg-screen">
-	<div id="nav">
-		<div class="large-screen medium-screen">
-    		<ul>
-    			<li><strong><a href="whatsOn.html">WHAT'S ON?</a></strong></li>
-    			<li><strong><a href="watchAndListen.html">WATCH & LISTEN</a></strong></li>
-    			<li><strong><a href="tickets.html">TICKETS</a></strong></li>
-    			<li><strong><a href="performers.html">PERFORMERS</a></strong></li>
-    			<li><strong><a href="aboutUs.html">ABOUT US</a></strong></li>
-    			<li><strong><a href="supportUs.html">SUPPORT US</a></strong></li>
-    			<li><strong><a href="">CONTACT</a></strong></li>
-    		</ul>
-		</div>
-	</div>
-</span>
-<span class="sml-screen">
-	<nav>
-		<ul>
-			<li><a href="#"><img src="Images/DropDown/threelines.png" alt="DropDownIcon"></a>
-				<ul>
-					<li><strong><a href="whatsOn.html">WHAT'S ON?</a></strong></li>
-    				<li><strong><a href="watchAndListen.html">WATCH & LISTEN</a></strong></li>
-    				<li><strong><a href="tickets.html">TICKETS</a></strong></li>
-    				<li><strong><a href="performers.html">PERFORMERS</a></strong></li>
-    				<li><strong><a href="aboutUs.html">ABOUT US</a></strong></li>
-    				<li><strong><a href="supportUs.html">SUPPORT US</a></strong></li>
-    				<li><strong><a href="">CONTACT</a></strong></li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
-</span>
-<div id="navBelow">
-	<div class ="med sml">	
-    	<ul>
-    		<li><strong><a href="tickets.html">BOOK TICKETS</a></strong></li>
-        	<img src="Images/Home/line-26px.png" alt="Seperating Vertical Line">
-    		<li><strong><a href="supportUs.html">DONATE</a></strong></li>
-        	<img src="Images/Home/line-26px.png" alt="Seperating Vertical line">
-    		<a href="https://www.facebook.com/nqorchestra?fref=ts"><img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a>
-		</ul>
-    </div>    
+<!--Code for header data-->
+<div id="main">
+    <div id="logo">
+        <a href="index.html">
+            <img src="Images/Home/LOGO.png" alt="Logo">
+        </a>
+    </div>
+    <span class="lrg-screen">
+        <div id="nav">
+            <div class="large-screen medium-screen">
+                <ul>
+                    <li><strong><a href="whatsOn.html">WHAT'S ON?</a></strong></li>
+                    <li><strong><a href="watchAndListen.html">WATCH & LISTEN</a></strong></li>
+                    <li><strong><a href="tickets.html">TICKETS</a></strong></li>
+                    <li><strong><a href="performers.html">PERFORMERS</a></strong></li>
+                    <li><strong><a href="aboutUs.html">ABOUT US</a></strong></li>
+                    <li><strong><a href="supportUs.html">SUPPORT US</a></strong></li>
+                    <li><strong><a href="contactUs.html">CONTACT</a></strong></li>
+                </ul>
+            </div>
+        </div>
+    </span>
+    <span class="sml-screen">
+        <nav>
+            <ul>
+                <li><a href="#"><img src="Images/DropDown/threelines.png" alt="DropDownIcon"></a>
+                    <ul>
+                        <li><strong><a href="whatsOn.html">WHAT'S ON?</a></strong></li>
+                        <li><strong><a href="watchAndListen.html">WATCH & LISTEN</a></strong></li>
+                        <li><strong><a href="tickets.html">TICKETS</a></strong></li>
+                        <li><strong><a href="performers.html">PERFORMERS</a></strong></li>
+                        <li><strong><a href="aboutUs.html">ABOUT US</a></strong></li>
+                        <li><strong><a href="supportUs.html">SUPPORT US</a></strong></li>
+                        <li><strong><a href="contactUs.html">CONTACT</a></strong></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </span>
+    <div id="navBelow">
+        <div class ="med sml">	
+            <ul>
+                <li><strong><a href="tickets.html">BOOK TICKETS</a></strong></li>
+                <img src="Images/Home/line-26px.png" alt="Seperating Vertical Line">
+                <li><strong><a href="supportUs.html">DONATE</a></strong></li>
+                <img src="Images/Home/line-26px.png" alt="Seperating Vertical line">
+                <a href="https://www.facebook.com/nqorchestra?fref=ts"><img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a>
+            </ul>
+        </div>    
+    </div>
 </div>
 <div id="sectionTop">
 	<div class="col-wide col-norm col-tablet col-phone">
