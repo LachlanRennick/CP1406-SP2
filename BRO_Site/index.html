@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>BRO - HOME</title>
 <link href="mainstyles.css" rel="stylesheet" type="text/css">
+    <link href="calendar.css" rel="stylesheet" type="text/css">
 <script src="scripts.js"></script>
 </head>
 
@@ -34,6 +35,16 @@
     js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5&appId=906643959415986";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/jquery-ui-datepicker.min.js"></script>
+<script>
+    $('#calendar').datepicker({
+        inline: true,
+        firstDay: 1,
+        showOtherMonths: true,
+        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    });
+</script>
 <div id="logo">
 	<a href="index.html">
 		<img src="Images/Home/LOGO.png" alt="Logo">
@@ -139,12 +150,8 @@
 		</blockquote>
 	</div>
 </div>
-<div
-        class="fb-like"
-        data-share="true"
-        data-width="450"
-        data-show-faces="true">
-</div>
+<div id="calendar"></div>
+
 <div id="footer">
 	<ul>
     	<span class ="large">
