@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>BRO - HOME</title>
 <link href="mainstyles.css" rel="stylesheet" type="text/css">
+<link href="gallery.css" rel="stylesheet" type="text/css">
 <link href="calendar.css" rel="stylesheet" type="text/css">
 <script src="scripts.js"></script>
 </head>
@@ -45,6 +46,46 @@
         dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     });
 </script>
+<script type="text/javascript" src="js/jssor.slider-20.min.js"></script>
+    <!-- use jssor.slider-20.debug.js instead for debug -->
+    <script>
+        jssor_1_slider_init = function() {
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideWidth: 600,
+              $Cols: 2,
+              $Align: 100,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+			
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 800);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        };
+    </script>
 <!--Code for header data-->
 <div id="main">
     <div id="logo">
@@ -94,6 +135,48 @@
                 <a href="https://www.facebook.com/nqorchestra?fref=ts"><img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a>
             </ul>
         </div>    
+    </div>
+</div>
+<!--Code for image gallery-->
+<div id="gallery">
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 300px; overflow: hidden; visibility: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading">
+            </div>
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 300px; overflow: hidden;">
+                <div style="display: none;">
+                    <img data-u="image" src="img/002.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/003.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/004.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/005.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/006.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/007.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/008.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/009.jpg" alt="Gallery Image">
+                </div>
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;" data-autocenter="1">
+                <div data-u="prototype" style="width:12px;height:12px;"></div>
+            </div>
+            <!-- Arrow Navigator -->
+            <span data-u="arrowleft" class="jssora13l" style="top:123px;left:30px;width:40px;height:50px;" data-autocenter="2"></span>
+            <span data-u="arrowright" class="jssora13r" style="top:123px;right:30px;width:40px;height:50px;" data-autocenter="2"></span>
+            <a href="http://www.jssor.com" style="display:none">Jssor Slider</a>
     </div>
 </div>
 <div id="sectionTop">
@@ -176,5 +259,8 @@
         </ul>
     </div>
 </div>
+<script>
+        jssor_1_slider_init();
+</script>
 </body>
 </html>

@@ -235,9 +235,6 @@ nav ul ul ul {
 	}
 }
 /*Used Lindsey's code to help^*/
-#sectionTop {
-	margin-top:110px;	
-}
 #sectionTop a {
 	height:200px;
 	float:left;
@@ -451,7 +448,6 @@ nav ul ul ul {
 	padding-top:10px;
 }
 #main {
-	position:fixed;
     top:0;
     width:100%;
     margin:0px;	
