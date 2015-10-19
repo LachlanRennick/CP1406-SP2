@@ -455,3 +455,47 @@ nav ul ul ul {
 	height:150px;
 	padding-top:10px;
 }
+.formData {
+	width:45%;	
+}
+.formData form{
+	float:left;
+}
+form {
+	width:100%;
+	clear:left;	
+}
+label
+{
+width: 8em;
+float: left;
+text-align: right;
+margin-right: 0.5em;
+display: block
+}
+input  {
+	margin-left:35px;	
+}
+.submit input
+{
+margin-left: 11em;
+} 
+.formData2 {
+	width:45%;
+	float:right;
+	margin-bottom:50px;	
+}
+.formData2 form {
+	float:right;
+	clear:both;
+}
+/*Added to differentiate this information for user*/
+#debitInfo {
+	width:10em;
+	border:double;
+	margin-left:auto;
+	margin-right:auto;	
+}
+#debitInfo p {
+	padding-left:20px;	
+}

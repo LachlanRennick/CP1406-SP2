@@ -67,13 +67,72 @@
     </div>
 </div>
 <div class="section">
-	<h2>2015 REPERTORIE</h2>
-    <img src="Images/WhatsOnPage/MusicalFeast2015.png" alt="Anouncements Image">
-    <!--Data displayed will be changed, left incase structure is needed/applicable for the data to go on this page-->
-    <div class="anouncements">
-    	<h3><em>Rhapsody in Blue</em></h3>
-    	<h4><u>PROGRAM</u></h4>
-        <p>agagagagagagagagagaag</p>
+<!--Thankyou to Paul McCarthy for help with form construction and CSS modification : http://www.webcredible.com/blog/applying-css-forms/-->
+	<h2>Support the Orchestra!</h2>
+    <div class="formData">
+		<form action="#">
+			<fieldset>
+            <legend>How you can help the orchestra</legend>
+            <h3>I would like to assist the orchestra:</h3>
+            <p> <input type="radio" id="player"/><label for="player">As a player</label></p>
+            <p> <input type="radio" id="management"/><label for="management">Management/admin</label></p>
+            <p> <input type="radio" id="support"/><label for="support">Player Support</label></p>
+            <p> <input type="radio" id="fundraising"/><label for="fundraising">Fundraising</label></p>
+            <p> <input type="radio" id="promotion"/><label for="promotion">Marketing/Promotion</label></p>
+            <p> <input type="radio" id="sponsorship"/><label for="sponsorship">Sponsorship</label></p>
+            <p> <input type="radio" id="publishing"/><label for="publishing">Desktop Publishing</label></p>
+            <h3>Player Registration:</h3>
+            <p><label for="instrument">Instrument(s:)</label> <input type="text" id="instrument" /></p>
+            <p><label for="qualifications">Qualifications:</label> <input type="text" id="qualifications" /><br /></p>
+            <p><label for="experience">Experience:</label> <input type="text" id="experience" /><br /></p>
+            <p class="submit"><input type="submit" value="Submit" /></p>
+            </fieldset>
+		</form>
+    </div>
+    <div class="formData2">
+		<form action="#">
+			<fieldset>
+            <legend>Join Today!</legend>
+            <h3>Membership Type</h3><p>(Please select one)</p>
+            <p> <input type="radio" id="adult"/><label for="adult">Adult</label></p>
+            <p> <input type="radio" id="family"/><label for="family">Family</label></p>
+            <p> <input type="radio" id="student"/><label for="student">Student</label></p>
+            <p> <input type="radio" id="concession"/><label for="concession">Concession</label></p>
+            <p><label for="studentNo">Student/Concession No:</label> <input type="text" id="studentNo" /></p>
+            <h3>*Applicant Details:</h3>
+            <h4>*Person 1:-</h4>
+            <p><label for="title1">*Title:</label> <input type="text" id="title1" /><br /></p>
+            <p><label for="lastName1">*Family Name:</label> <input type="text" id="lastName1" /><br /></p>
+            <p><label for="firstName1">*Given Name(s:)</label> <input type="text" id="firstName1" /><br /></p>
+            <p class="submit"><input type="submit" value="Submit" /></p>
+            <h4>Person 2:-</h4>
+            <p><label for="title2">Title:</label> <input type="text" id="title2" /><br /></p>
+            <p><label for="lastName2">Family Name:</label> <input type="text" id="lastName2" /><br /></p>
+            <p><label for="firstName2">Given Name(s):</label> <input type="text" id="firstName2" /><br /></p>
+            <p class="submit"><input type="submit" value="Submit" /></p>
+            <h4>Children</h4>
+            <h5>Name(s):</h5>
+            <p><label for="childName1">Child 1:</label> <input type="text" id="childName1" /><br /></p>
+            <p><label for="childName2">Child 2:</label> <input type="text" id="childName2" /><br /></p>
+            <p><label for="childName3">Child 3:</label> <input type="text" id="childName3" /><br /></p>
+            <h5>D.O.B:</h5>
+            <p><label for="childAge1">Child 1:</label> <input type="text" id="childAge1" /><br /></p>
+            <p><label for="childAge2">Child 2:</label> <input type="text" id="childAge2" /><br /></p>
+            <p><label for="childAge3">Child 3:</label> <input type="text" id="childAge3" /><br /></p>
+            <h4>*Personal Details</h4>
+            <p><label for="address">*Address:</label> <input type="text" id="address" /><br /></p>
+            <p><label for="phone">*Telephone:</label> <input type="text" id="phone" /><br /></p>
+            <p><label for="email">*E-mail:</label> <input type="text" id="email" /><br /></p>
+            <h4>*Payment Options</h4>
+            <p> <input type="radio" id="cash"/><label for="cash">Cash</label></p>
+            <p> <input type="radio" id="cheque"/><label for="cheque">Cheque</label></p>
+            <p> <input type="radio" id="paypal"/><label for="paypal">PayPal</label></p>
+            <p> <input type="radio" id="debit"/><label for="debit">Direct Debit to</label></p>
+            <div id="debitInfo">
+            	<p><em>NQ Ensembles Inc<br>BSB:034-222<br>Account:17-3033</em></p>
+            </div>
+            </fieldset>
+		</form>
     </div>
 </div>
 <div id="footer">
