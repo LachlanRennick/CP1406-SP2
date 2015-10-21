@@ -3,26 +3,38 @@
 <head>
 <meta charset="utf-8">
 <title> Page for javascripting - NOT FOR SITE</title>
-<link href="mainstyles.css" rel="stylesheet" type="text/css">
+<link href="mainstyles.css" rel="stylesheet" type="text/css">    
 </head>
     
 <body>
     <!-- This javascript was made using parts of a tutorial found here: http://snook.ca/archives/javascript/simplest-jquery-slideshow
 Changes have been made according to needs-->
-<div class="fadein">
-    <img src="Images/Home/HomeGallery/2008-BRO-Slavonic-Swoon-17.jpg" style="display: none">
-    <img src="Images/Home/HomeGallery/Hot_Summer_Night_54.jpg" style="display: none">
-    <img src="Images/Home/HomeGallery/Hot_Summer_Night_107.jpg" style="display: none">
-    <img src="Images/Home/HomeGallery/Hot_Summer_Night-223.jpg" style="display: none">    
-    <img src="Images/Home/HomeGallery/Hot_Summer_Night-240.jpg" style="display: none">
-    <img src="Images/Home/HomeGallery/last_night_of_the_proms_bro_dsc0001.jpg" style="display: none">   
-    <img src="Images/Home/HomeGallery/last_night_of_the_proms_bro_dsc0011.jpg" style="display: none">   
-    <img src="Images/Home/HomeGallery/last_night_of_the_proms_bro_dsc0067.jpg" style="display: none">   
-    <img src="Images/Home/HomeGallery/last_night_of_the_proms_bro_dsc0592.jpg" style="display: none">
-         </div>   
-                   
-<div class="gallery" align="center">   
-<!--<script id="slide">
+<div class="gallery">
+    <img src="Images/Home/HomeGallery/2008-BRO-Slavonic-Swoon-17.jpg" id="x0" width = 500 height= 500>
+    <img src="Images/Home/HomeGallery/Hot_Summer_Night_54.jpg" id="x1" width = 500 height= 500>
+    <img src="Images/Home/HomeGallery/Hot_Summer_Night_107.jpg" id="x2" width = 500 height= 500>
+    <img src="Images/Home/HomeGallery/Hot_Summer_Night-223.jpg" id="x3" width = 500 height= 500>    
+    <img src="Images/Home/HomeGallery/Hot_Summer_Night-240.jpg" id="x4" width = 500 height= 500>
+    <img src="Images/Home/HomeGallery/last_night_of_the_proms_bro_dsc0001.jpg" id="x5" width = 500 height= 500>   
+    <img src="Images/Home/HomeGallery/last_night_of_the_proms_bro_dsc0011.jpg" id="x6" width = 500 height= 500>   
+    <img src="Images/Home/HomeGallery/last_night_of_the_proms_bro_dsc0067.jpg" id="x7" width = 500 height= 500>   
+    <img src="Images/Home/HomeGallery/last_night_of_the_proms_bro_dsc0592.jpg" id="x8" width = 500 height= 500>   
+
+<!--<script type="text/javascript">
+    $(function(){
+    $('.gallery img:gt(0)').hide();
+        setInterval(,(){
+        $('.gallery :firstChild').fadeout()
+        .next('img').fadeIn()
+        .end().appendTo('.gallery');},
+            2500);
+    });
+</script>-->
+   <script> 
+    
+    </script>
+    
+    <!--<script id="slide">
 $(function(){
     $('.fadein img:gt(0)').hide(1000);
         setInterval(function(1000){
@@ -32,10 +44,6 @@ $(function(){
         1000);
     });
     </script>-->
-    
-    <script>
-    
-    </script>
     
     <!--<script>
     $(function(){
