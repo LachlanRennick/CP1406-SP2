@@ -36,58 +36,7 @@
     js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5&appId=906643959415986";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="js/jquery-ui-datepicker.min.js"></script>
-<script>
-    $('#calendar').datepicker({
-        inline: true,
-        firstDay: 1,
-        showOtherMonths: true,
-        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-    });
-</script>
-<script type="text/javascript" src="js/jssor.slider-20.min.js"></script>
-    <!-- use jssor.slider-20.debug.js instead for debug -->
-    <script>
-        jssor_1_slider_init = function() {
-            
-            var jssor_1_options = {
-              $AutoPlay: true,
-              $SlideWidth: 600,
-              $Cols: 2,
-              $Align: 100,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-            var events = [
-                { Title: "2015 Final Concert - A musical Feast", Date: new Date("07/11/2015")
-                }
-            
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizes
-			
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 800);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            //responsive code end
-        };
-    </script>
+
 <!--Code for header data-->
 <div id="main">
     <div id="logo">
@@ -134,7 +83,7 @@
                 <img src="Images/Home/line-26px.png" alt="Seperating Vertical Line">
                 <li><strong><a href="supportUs.html">DONATE</a></strong></li>
                 <img src="Images/Home/line-26px.png" alt="Seperating Vertical line">
-                <a href="https://www.facebook.com/nqorchestra?fref=ts"><img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a>
+                <a href="https://www.facebook.com/nqorchestra?fref=ts" target="_blank"><img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a>
             </ul>
         </div>    
     </div>
@@ -239,6 +188,16 @@
 	</div>
 </div>
 <div id="calendar"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/jquery-ui-datepicker.min.js"></script>
+<script>
+    $('#calendar').datepicker({
+        inline: true,
+        firstDay: 1,
+        showOtherMonths: true,
+        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    });
+</script>
 
 <div id="footer">
 	<ul>
@@ -253,10 +212,10 @@
     <div id="footerFB">
     	<ul>
         	<span class ="large">
-        		<li><strong><a href="https://www.facebook.com/nqorchestra?fref=ts">Follow us on <img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a></strong></li>
+        		<li><strong><a href="https://www.facebook.com/nqorchestra?fref=ts" target="_blank">Follow us on <img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a></strong></li>
         	</span>
             <span class ="small">
-        		<li><strong><a href="https://www.facebook.com/nqorchestra?fref=ts"><img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a></strong></li>
+        		<li><strong><a href="https://www.facebook.com/nqorchestra?fref=ts" target="_blank"><img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a></strong></li>
         	</span>
         </ul>
     </div>
