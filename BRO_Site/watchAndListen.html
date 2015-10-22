@@ -4,9 +4,52 @@
 <meta charset="utf-8">
 <title>BRO - Interact</title>
 <link href="mainstyles.css" rel="stylesheet" type="text/css">
+<link href="gallery.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+<!--JavaScript for image gallery - Reference in gallery.css-->
+<script type="text/javascript" src="js/jssor.slider-20.min.js"></script>
+    <!-- use jssor.slider-20.debug.js instead for debug -->
+<script>
+        jssor_1_slider_init = function() {
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideWidth: 600,
+              $Cols: 2,
+              $Align: 100,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+			
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 800);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        };
+    </script>
+<!--Actual HTML code-->
 <div id="header">
     <div id="logo">
         <a href="index.html">
@@ -68,14 +111,88 @@
         </div>
     </div>
 </div>
-<div class="section">
-	<h2>2015 REPERTORIE</h2>
-    <img src="Images/WhatsOnPage/MusicalFeast2015.png" alt="Anouncements Image">
+<div id="gallery2">
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 300px; overflow: hidden; visibility: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading">
+            </div>
+            
+                <!--WS3 Schools helped to learn how to add videos : http://www.w3schools.com/html/html5_video.asp-->
+            <!-- This has video inbedded in the gallery |issues arise though such as wrong size and inseficient time to watch
+    <video width="400" controls>
+      <source src="../violins.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+	</video>
+            
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 300px; overflow: hidden;">
+                <div style="display: none;">
+                    <video data-u="video" src="img/100.mp4" alt="Gallery video" controls>
+                </div>-->
+            
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 300px; overflow: hidden;">
+                <div style="display: none;">
+                    <img data-u="video" src="img/002.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/003.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/004.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/005.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/006.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/007.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/008.jpg" alt="Gallery Image">
+                </div>
+                <div style="display: none;">
+                    <img data-u="image" src="img/009.jpg" alt="Gallery Image">
+                </div>
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;" data-autocenter="1">
+                <div data-u="prototype" style="width:12px;height:12px;"></div>
+            </div>
+            <!-- Arrow Navigator -->
+            <span data-u="arrowleft" class="jssora13l" style="top:123px;left:30px;width:40px;height:50px;" data-autocenter="2"></span>
+            <span data-u="arrowright" class="jssora13r" style="top:123px;right:30px;width:40px;height:50px;" data-autocenter="2"></span>
+            <a href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+    </div>
+</div>
+<div class="sectionWatch">
+	<h2>Video Library</h2>
+    <!--WS3 Schools helped to learn how to add videos : http://www.w3schools.com/html/html5_video.asp-->
+    <video width="400" controls>
+      <source src="img/Videos/violins.mp4"type="video/mp4">
+      Your browser does not support HTML5 video.
+	</video>
     <!--Data displayed will be changed, left incase structure is needed/applicable for the data to go on this page-->
-    <div class="anouncements">
-    	<h3><em>Rhapsody in Blue</em></h3>
-    	<h4><u>PROGRAM</u></h4>
-        <p>agagagagagagagagagaag</p>
+    <div class="anouncementsWatch">
+    	<h3><em>"Violins have got it together!"</em></h3>
+    	<h4><u>Violin Practice at the orchestra</u></h4>
+        <p>See more on our <a href="https://www.facebook.com/nqorchestra/videos"><strong>Facebook</strong></a></p>
+    </div>
+</div>
+<div class="sectionWatch2">
+    <!--WS3 Schools helped to learn how to add videos : http://www.w3schools.com/html/html5_video.asp-->
+    <video width="400" controls>
+      <source src="img/Videos/americaflag.mp4"type="video/mp4">
+      Your browser does not support HTML5 video.
+	</video>
+    <!--Data displayed will be changed, left incase structure is needed/applicable for the data to go on this page-->
+    <div class="anouncementsWatch">
+    	<h3><em>"The Common Man"</em></h3>
+    	<h4><u>Brass section rehearsing Copland's Fanfare</u></h4>
+        <p>
+            A wee taster of what's in store for lucky Townsville tonight! The brass section rehearsing Copland's Fanfare For The Common Man last night. Still time to get your
+            <a href="https://au.patronbase.com/_TVCC/Productions/0886/Performances"><strong>tickets at Ticketshop</strong></a>, concert is at 8pm tonight,don't miss out!
+        </p>
     </div>
 </div>
 <div id="footer">
@@ -86,7 +203,7 @@
         <span class ="small">
     		<li><strong><a href="index.html">B.R.O</a></strong></li>
     	</span>
-    	<li><strong><a href="">CONTACT</a></strong></li>
+    	<li><strong><a href="contactUs.html">CONTACT</a></strong></li>
     </ul>
     <div id="footerFB">
     	<ul>
@@ -99,5 +216,8 @@
         </ul>
     </div>
 </div>
+<script>
+ 	jssor_1_slider_init();
+</script>
 </body>
 </html>

@@ -47,7 +47,6 @@ body a:hover {
 	padding-bottom: 0px;
 	float:right;
 	clear:both;
-	
 	}
 	#nav ul {
 		list-style-type: none;
@@ -415,12 +414,108 @@ nav ul ul ul {
 		float:left;
 		clear:left;
 	}
+@media (min-width:1600px) {
+	.sectionWatch {
+		width: 48%;
+	}
+}
+@media (min-width:981px) and (max-width:1599px) {
+	.sectionWatch {
+		width: 30%;
+	}	
+}
+@media (min-width: 700px) and (max-width:980px) {
+	.sectionWatch {
+		float:left;
+		width: 48%;
+	}	
+}
+@media (max-width: 699px) {
+	.sectionWatch {
+		float:left;
+		width: 100%;
+	}
+	}
+.sectionWatch {
+	padding-top:10px;
+	padding-left:30px;
+	margin-top:10px;
+	margin-bottom:50px;
+	margin-left: auto;
+	margin-right: auto;
+	float:left;
+}
+	.sectionWatch h2 {
+		float:left;
+		clear:left;
+		background-color:#000000;
+		color:#FFFFFF;
+		padding-right:5px;
+		padding-left:5px;
+	}
+	.sectionWatch img {	
+		float:left;
+		clear:left;
+	}
+	.sectionWatch video {	
+		float:left;
+		clear:left;
+	}
+@media (min-width:1600px) {
+	.sectionWatch2 {
+		float:right;
+		width: 48%;
+	}
+}
+@media (min-width:981px) and (max-width:1599px) {
+	.sectionWatch2 {
+		float:right;
+		width: 48%;
+	}	
+}
+@media (min-width: 700px) and (max-width:980px) {
+	.sectionWatch2 {
+		float:left;
+		width: 48%;
+	}	
+}
+@media (max-width: 699px) {
+	.sectionWatch2 {
+		float:left;
+		width: 100%;
+	}
+	}
+.sectionWatch2 {
+	padding-top:75px;
+	padding-left:30px;
+	margin-top:10px;
+	margin-bottom:100px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+	.sectionWatch2 h2 {
+		float:left;
+		clear:left;
+		background-color:#000000;
+		color:#FFFFFF;
+		padding-right:5px;
+		padding-left:5px;
+	}
+	.sectionWatch2 img {	
+		float:left;
+		clear:left;
+	}
+	.sectionWatch2 video {	
+		float:left;
+		clear:left;
+	}
 @media (min-width: 768px) {
     .anouncements {
 		width:75%;	
 	}
 }
-@media (max-width: 767px) {
+@media (max-width: 880px) {
     .anouncements {
 		width:90%;	
 	}
@@ -438,6 +533,30 @@ nav ul ul ul {
 	.anouncements p {	
 		padding-left:10px;
 	}
+@media (min-width:1600px) {
+	.anouncementsWatch {
+		width:40%;
+	}
+}
+@media (max-width:1599px) {
+	.anouncementsWatch {
+		clear:left;
+		width:90%;
+	}	
+}
+.anouncementsWatch {	
+	margin-bottom:25px;
+	float:left;
+}
+	.anouncementsWatch h3 {	
+		padding-left:10px;
+	}
+	.anouncementsWatch h4 {	
+		padding-left:10px;
+	}
+	.anouncementsWatch p {	
+		padding-left:10px;
+	}
 #header {
 	position:fixed;
     top:0;
@@ -446,6 +565,8 @@ nav ul ul ul {
 	background-color:#fff;
 	height:200px;
 	padding-top:10px;
+	/*This index allows the java image gallery to fall behind the 'header' with the scroll up effect*/
+	z-index:+1;
 }
 #main {
     top:0;
@@ -467,7 +588,7 @@ form {
 }
 label
 {
-width: 8em;
+width: 10em;
 float: left;
 text-align: right;
 margin-right: 0.5em;
@@ -498,4 +619,31 @@ margin-left: 11em;
 }
 #debitInfo p {
 	padding-left:20px;	
+}
+#memberFees {
+	width: 45%;
+	float: left;
+	border: thin solid #9F9F9F;
+}
+#memberFees p {
+	padding-left:20px;	
+}
+#memberFees .contact-title {
+	padding-left:20px;	
+}
+#info-adult {
+	padding-top:10px;	
+}
+#info-family {
+	padding-top:10px;	
+}
+.contact-title{
+	width:100px;
+	display:inline-block;
+	text-align:right;
+	padding-right:25px;	
+}
+#contact {
+	float:left;
+	clear:both;	
 }
