@@ -520,9 +520,15 @@ nav ul ul ul {
 		width:90%;	
 	}
 }
+@media (min-width: 881px) {
+    .anouncements {
+		width:70%;	
+	}
+}
 .anouncements {	
 	margin-bottom:25px;
 	float:left;
+	padding-bottom:50px;
 }
 	.anouncements h3 {	
 		padding-left:10px;
@@ -646,4 +652,29 @@ margin-left: 11em;
 #contact {
 	float:left;
 	clear:both;	
+}
+@media (min-width:750px;) and (max-width:1199px) {
+	.morePerformers {
+		width:30%;	
+	}	
+}
+@media (min-width:1200px) {
+	.morePerformers {
+		width:20%;
+	}	
+}
+@media (max-width:749px) {
+	.morePerformers {
+		width:50%;
+	}	
+}
+.morePerformers {
+	float:left;	
+	height:350px;
+}
+.morePerformers p {
+	clear:left;
+}
+#performMore {
+	clear:left;	
 }
