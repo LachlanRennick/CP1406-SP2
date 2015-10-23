@@ -52,7 +52,7 @@
                 <img src="Images/Home/line-26px.png" alt="Seperating Vertical Line">
                 <li><strong><a href="supportUs.html">DONATE</a></strong></li>
                 <img src="Images/Home/line-26px.png" alt="Seperating Vertical line">
-                <a href="https://www.facebook.com/nqorchestra?fref=ts" target="_blank"><img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a>
+                <a href="https://www.facebook.com/nqorchestra?fref=ts"><img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a>
             </ul>
         </div>    
     </div>
@@ -70,7 +70,7 @@
 <!--Thankyou to Paul McCarthy for help with form construction and CSS modification : http://www.webcredible.com/blog/applying-css-forms/-->
 	<h2>Support the Orchestra!</h2>
     <div class="formData">
-		<form action="#">
+		<form name="helpUs" action="http://ditwebtsv.jcu.edu.au/~sci-lmw1/forms.php">
 			<fieldset>
             <legend>How you can help the orchestra</legend>
             <h3>I would like to assist the orchestra:</h3>
@@ -90,7 +90,7 @@
 		</form>
     </div>
     <div class="formData2">
-		<form action="#">
+		<form id="joinUs" action="http://ditwebtsv.jcu.edu.au/~sci-lmw1/forms.php">
 			<fieldset>
             <legend>Join Today!</legend>
             <h3>Membership Type</h3><p>(Please select one)</p>
@@ -101,15 +101,13 @@
             <p><label for="studentNo">Student/Concession No:</label> <input type="text" id="studentNo" /></p>
             <h3>*Applicant Details:</h3>
             <h4>*Person 1:-</h4>
-            <p><label for="title1">*Title:</label> <input type="text" id="title1" /><br /></p>
+            <p><label for="title1">*Title:</label> <input type="text" id="title1"  name="title1"/><br /></p>
             <p><label for="lastName1">*Family Name:</label> <input type="text" id="lastName1" /><br /></p>
-            <p><label for="firstName1">*Given Name(s:)</label> <input type="text" id="firstName1" /><br /></p>
-            <p class="submit"><input type="submit" value="Submit" /></p>
+            <p><label for="firstName1">*Given Name(s:)</label> <input type="text" id="firstName1" name="firstName1" /><br /></p>
             <h4>Person 2:-</h4>
             <p><label for="title2">Title:</label> <input type="text" id="title2" /><br /></p>
             <p><label for="lastName2">Family Name:</label> <input type="text" id="lastName2" /><br /></p>
             <p><label for="firstName2">Given Name(s):</label> <input type="text" id="firstName2" /><br /></p>
-            <p class="submit"><input type="submit" value="Submit" /></p>
             <h4>Children</h4>
             <h5>Name(s):</h5>
             <p><label for="childName1">Child 1:</label> <input type="text" id="childName1" /><br /></p>
@@ -131,26 +129,47 @@
             <div id="debitInfo">
             	<p><em>NQ Ensembles Inc<br>BSB:034-222<br>Account:17-3033</em></p>
             </div>
+            <p class="submit"><input type="submit" value="Submit" /></p>
             </fieldset>
 		</form>
     </div>
-</div>
-<div class="anouncements">
+    <h2>Membership Fees</h2>
+    <div class="memberFees">
+        <div id="info-adult">
+            <span class="contact-title"><strong>Adult-</strong></span>
+            <span class="contact-addressing">$30</span>
+        </div>
+        <div id="info-student">
+            <span class="contact-title"><strong>Student-</strong></span>
+            <span class="contact-addressing">$15</span>
+        </div>
+        <div id="info-child">
+            <span class="contact-title"><strong>Child(<18yrs)-</strong></span>
+            <span class="contact-addressing">$15</span>
+        </div>
+        <div id="info-concession">
+            <span class="contact-title"><strong>Concession-</strong></span>
+            <span class="contact-addressing">$15</span>
+        </div>
+        <p>
+        Concession available to persons in receipt of centrelink or DVA Income support and holders of Commonwealth Senior's Health Care Card.)
+        </p>
+        <div id="info-family">
+            <span class="contact-title"><strong>Family-</strong></span>
+            <span class="contact-addressing">$60</span>
+        </div>
+        <p>
+        (Family membership available to a group of two adults and three persons udner the age of 18 all of whom reside at the same address)
+        </p>
+    </div>
     <h2>Become a benefactor</h2>
-    <p>With a philanthropic gift of $200 or more, you can become an Orchestra Benefactor and be placed on our Benefactor roll for 12 months.</p>
-    <p>This roll will be published in each concert program and on our website for 12 months.</p>
-    <p>As a benefactor, you will also receive 2 complimentary tickets to our next concert, be placed on the mailing list for our newsletter and will be a guest at our annual Season's Launch function.</p>
-    <p><a href="pdf/Benefactors.pdf"><u>Find here the Benefactors' roll</u> (7th August 2015)</a></p>
-    <p><i>The North Queensland Ensembles Inc is a tax deductible fund listed on the Register of Cultural Organisations under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible.</i></p>
-    <h2>They support us</h2>
-<img src="Images/SupportUsPage/townsville-council-logo.jpg">
-     <img src="Images/SupportUsPage/AFCMlogo-25th.gif">
-          <img src="Images/SupportUsPage/ACVClogo.jpg">
-               <img src="Images/SupportUsPage/QNICKEL.jpg">
-                    <img src="Images/SupportUsPage/sturt-business-centre-logo.png">
-                         <img src="Images/SupportUsPage/GG%20logo%20for%20email.jpg">
-                            <img src="Images/SupportUsPage/SOE%20new%20logo%203.jpg">
-                                 <img src="Images/SupportUsPage/asap-logo.png">
+    <div class="memberFees">
+        <p>With a philanthropic gift of $200 or more, you can become an Orchestra Benefactor and be placed on our Benefactor roll for 12 months.</p>
+        <p>This roll will be published in each concert program and on our website for 12 months.</p>
+        <p>As a benefactor, you will also receive 2 complimentary tickets to our next concert, be placed on the mailing list for our newsletter and will be a guest at our annual Season's Launch function.</p>
+        <p><a href="pdf/Benefactors.pdf"><u>Find here the Benefactors' roll</u> (7th August 2015)</a></p>
+        <p><i>The North Queensland Ensembles Inc is a tax deductible fund listed on the Register of Cultural Organisations under Subdivision 30-B of the Income tax Assessment Act 1997. Donations of $2.00 or more are tax deductible.</i></p>
+    </div>
 </div>
 <div id="footer">
 	<ul>
@@ -160,19 +179,37 @@
         <span class ="small">
     		<li><strong><a href="index.html">B.R.O</a></strong></li>
     	</span>
-    	<li><strong><a href="">CONTACT</a></strong></li>
+    	<li><strong><a href="contactUs.html">CONTACT</a></strong></li>
     </ul>
     <div id="footerFB">
     	<ul>
         	<span class ="large">
-        		<li><strong><a href="https://www.facebook.com/nqorchestra?fref=ts" target="_blank">Follow us on <img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a></strong></li>
+        		<li><strong><a href="https://www.facebook.com/nqorchestra?fref=ts">Follow us on <img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a></strong></li>
         	</span>
             <span class ="small">
-        		<li><strong><a href="https://www.facebook.com/nqorchestra?fref=ts" target="_blank"><img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a></strong></li>
+        		<li><strong><a href="https://www.facebook.com/nqorchestra?fref=ts"><img src="Images/Home/FB-New.png" alt="BRO Facebook Link"></a></strong></li>
         	</span>
         </ul>
     </div>
 </div>
+<!--Tested but doesn't seem to be working, no idea why its not... D: -->
+<script  type="text/javascript">
+ var frmvalidator = new Validator("joinUs");
+ frmvalidator.addValidation("firstName1","req","Please enter your First Name");
+ frmvalidator.addValidation("firstName1","maxlen=20", "Max length for FirstName is 20");
+ 
+ frmvalidator.addValidation("lastName1","req");
+ frmvalidator.addValidation("lastName1","maxlen=20");
+ 
+ frmvalidator.addValidation("email","maxlen=50");
+ frmvalidator.addValidation("email","req");
+ frmvalidator.addValidation("email","email");
+ 
+ frmvalidator.addValidation("phone","maxlen=50");
+ frmvalidator.addValidation("phone","numeric");
+ 
+ frmvalidator.addValidation("address","maxlen=50");
+</script>
 </body>
 </html>
 

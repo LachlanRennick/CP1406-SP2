@@ -626,15 +626,15 @@ margin-left: 11em;
 #debitInfo p {
 	padding-left:20px;	
 }
-#memberFees {
+.memberFees {
 	width: 45%;
 	float: left;
 	border: thin solid #9F9F9F;
 }
-#memberFees p {
+.memberFees p {
 	padding-left:20px;	
 }
-#memberFees .contact-title {
+.memberFees .contact-title {
 	padding-left:20px;	
 }
 #info-adult {
