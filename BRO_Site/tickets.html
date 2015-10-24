@@ -72,23 +72,27 @@
         </div>
     </div>
 </div>
-<div class="section">
+<div id="ticketHeading">
 	<h2>SHOWS</h2>
-    <div id="calendar"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="js/jquery-ui-datepicker.min.js"></script>
-    <script>
-        $('#calendar').datepicker({
-            inline: true,
-            firstDay: 1,
-            showOtherMonths: true,
-            dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        });
-    </script>
-        <p>Don't hesitate any longer! Click here to</p>
-        <strong><a href="https://au.patronbase.com/_TVCC/Productions/0886/Performances" target="_blank">BOOK TICKETS</a></strong></p>
-        <img src="Images/BuyTicketsPage/ticketshop_logo.jpg">
 </div>
+<div class="sectTick">
+	<div id="calendar">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="js/jquery-ui-datepicker.min.js"></script>
+        <script>
+			$('#calendar').datepicker({
+			inline: true,
+			firstDay: 1,
+			showOtherMonths: true,
+			dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+			});
+        </script>
+	</div>
+    <p>Don't hesitate any longer! Click here to</p>
+    <a href="https://au.patronbase.com/_TVCC/Productions/0886/Performances">
+    <img src="Images/BuyTicketsPage/ticketshop_logo.jpg" alt="Ticket Shop Logo">
+    </a>
+</div>         	
 <div id="footer">
 	<ul>
     	<span class ="large">
@@ -112,4 +116,3 @@
 </div>
 </body>
 </html>
-

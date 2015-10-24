@@ -653,7 +653,7 @@ margin-left: 11em;
 	float:left;
 	clear:both;	
 }
-@media (min-width:750px;) and (max-width:1199px) {
+@media (min-width:750px) and (max-width:1199px) {
 	.morePerformers {
 		width:30%;	
 	}	
@@ -678,7 +678,7 @@ margin-left: 11em;
 #performMore {
 	clear:left;	
 }
-@media (min-width:749px;) and (max-width:1023px) {
+@media (min-width:749px) and (max-width:1023px) {
 	#banner {
 		width:750px;
 	}	
@@ -702,4 +702,28 @@ margin-left: 11em;
 #banner {
 	margin-left:auto;
 	margin-right:auto;	
+}
+.sectTick {
+	width:450px;	
+	padding-top:60px;
+	margin-top:250px;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+}
+#calendar {
+	width:360px;
+	background-color:#BB2729;
+	margin-left:auto;
+	margin-right:auto;	
+}
+#ticketHeading h2 {
+	float:left;
+	clear:left;
+	background-color:#000000;
+	color:#FFFFFF;
+	padding-right:5px;
+	padding-left:5px;
+	margin-top:30px;
+	margin-left:20px;
 }
