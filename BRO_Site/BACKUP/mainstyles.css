@@ -400,7 +400,7 @@ nav ul ul ul {
 	margin-bottom:390px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 900px;
+	width: 95%;
 }
 	.section h2 {
 		float:left;
@@ -752,25 +752,4 @@ margin-left: 11em;
         margin-left:-10px;
         margin-top:50px;
     }
-}
-@media (min-width: 768px) {
-    .association {
-        width:75%;
-    }
-}
-@media (max-width: 880px) {
-    .association {
-        width:90%;
-    }
-}
-@media (min-width: 881px) {
-    .association {
-        width:70%;
-    }
-}
-.association {
-    margin-bottom:25px;
-    float:left;
-    clear:left;
-    padding-bottom:50px;
 }
