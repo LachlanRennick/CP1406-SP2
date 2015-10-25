@@ -397,17 +397,26 @@ nav ul ul ul {
 @media (min-width:1000px) {
     .section {
         width: 900px;
+    }
+    span.phone {display:none}
 }
+@media (min-width:751px) And (max-width:999px) {
+    .section {
+        width: 750px;
+    }
+    span.phone {display:none}
 }
-@media (min-width:500px) And (max-width:999px) {
+@media (min-width:500px) And (max-width:750px) {
     .section {
         width: 400px;
     }
+    span.phone {display:none}
 }
 @media (max-width:499px){
     .section {
         width: 100%;
     }
+    span.notPhone {display:none}
 }
 .section {
 	padding-top:20px;
