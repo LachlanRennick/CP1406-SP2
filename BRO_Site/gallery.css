@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 /*Code Errors everytime I remove 'tab' effect - hence left it in working state*/
+/*Thankyou to Jssor - http://www.jssor.com/demos/nearby-image-partial-visible-slider.slider*/
 
 		.jssorb01 {
             position: absolute;
@@ -36,12 +37,48 @@
         .jssora13r:hover { background-position: -190px -35px; }
         .jssora13l.jssora13ldn { background-position: -250px -35px; }
         .jssora13r.jssora13rdn { background-position: -310px -35px; }
+		@media (max-width: 999px) {
+			#jssor_1 {
+				z-index:-1;
+			}
+			#gallery {
+				background-color:transparent;	
+			}
+			#gallery2 {
+				background-color:transparent;	
+			}
+		}
+		@media (min-width:1000px) {
+			#jssor_1 {
+				z-index:auto;
+			}
+			#gallery {
+				background-color:#000;	
+			}
+			#gallery2 {
+				background-color:#000;	
+			}
+		}
 		#gallery {
 			margin-top:20px;
 			padding-right:20px;
 			margin-left:-10px;
-			width:100%; 
-			background-color:#000;	
+			width:100%; 	
+		}
+		@media (min-width: 400px) {
+			#gallery2 {
+				margin-top:270px;	
+			}
+		}
+		@media (max-width: 399px) {
+			#gallery2 {
+				margin-top:310px;	
+			}
+		}
+		#gallery2 {
+			padding-right:20px;
+			margin-left:-10px;
+			width:100%; 	
 		}
                 
     

@@ -394,13 +394,28 @@ nav ul ul ul {
 	margin-left:-8px;
 	margin-right:-8px;	
 }
+@media (min-width:1000px) {
+    .section {
+        width: 900px;
+}
+}
+@media (min-width:500px) And (max-width:999px) {
+    .section {
+        width: 400px;
+    }
+}
+@media (max-width:499px){
+    .section {
+        width: 100%;
+    }
+}
 .section {
 	padding-top:20px;
 	margin-top:250px;
 	margin-bottom:390px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 900px;
+
 }
 	.section h2 {
 		float:left;
@@ -413,6 +428,7 @@ nav ul ul ul {
 	.section img {	
 		float:left;
 		clear:left;
+        margin-top:20px;
 	}
 @media (min-width:1600px) {
 	.sectionWatch {
@@ -512,17 +528,17 @@ nav ul ul ul {
 	}
 @media (min-width: 768px) {
     .anouncements {
-		width:75%;	
+		width:75%;
 	}
 }
 @media (max-width: 880px) {
     .anouncements {
-		width:90%;	
+		width:90%;
 	}
 }
 @media (min-width: 881px) {
     .anouncements {
-		width:70%;	
+		width:70%;
 	}
 }
 .anouncements {	
@@ -539,6 +555,21 @@ nav ul ul ul {
 	.anouncements p {	
 		padding-left:10px;
 	}
+.longAnouncements {
+    margin-bottom:25px;
+    float:left;
+    padding-bottom:50px;
+    width:100%;
+}
+    .longAnouncements h3 {
+        padding-left: 10px;
+    }
+    .LongAnouncements h4 {
+        padding-left: 10px;
+    }
+    .longAnouncements p {
+        padding-left: 10px;
+    }
 @media (min-width:1600px) {
 	.anouncementsWatch {
 		width:40%;
@@ -582,8 +613,30 @@ nav ul ul ul {
 	height:150px;
 	padding-top:10px;
 }
-.formData {
-	width:45%;	
+@media (min-width:1000px){
+    .formData {
+        width:45%;
+    }
+    .formData2 {
+        width:45%;
+    }
+    .memberFees {
+        width: 45%;
+    }
+    #banner h2 {
+        margin-top:200px;
+    }
+}
+@media (max-width:999px){
+    .formData {
+        width:98%;
+    }
+    .formData2 {
+        width:98%;
+    }
+    .memberFees {
+        width:98%;
+    }
 }
 .formData form{
 	float:left;
@@ -606,9 +659,8 @@ input  {
 .submit input
 {
 margin-left: 11em;
-} 
+}
 .formData2 {
-	width:45%;
 	float:right;
 	margin-bottom:50px;	
 }
@@ -627,7 +679,6 @@ margin-left: 11em;
 	padding-left:20px;	
 }
 .memberFees {
-	width: 45%;
 	float: left;
 	border: thin solid #9F9F9F;
 }
@@ -663,21 +714,36 @@ margin-left: 11em;
 		width:20%;
 	}	
 }
-@media (max-width:749px) {
+@media (max-width:749px) and (min-width:500px) {
 	.morePerformers {
 		width:50%;
 	}	
+}
+@media (max-width:499px) {
+    .morePerformers {
+        width: 98%;
+    }
 }
 .morePerformers {
 	float:left;	
 	height:350px;
 }
-.morePerformers p {
-	clear:left;
-}
+    .morePerformers p {
+        clear: left;
+    }
+
 #performMore {
 	clear:left;	
 }
+    #performMore h2 {
+        background-color: #000000;
+        color: #FFFFFF;
+        padding-right: 5px;
+        padding-left: 5px;
+        /*Need to add width as was doing weird 100% blackline*/
+        /*Was going to use em but word is 14letters long yet 10em was still too big?*/
+        width:200px;
+    }
 @media (min-width:749px) and (max-width:1023px) {
 	#banner {
 		width:750px;
@@ -702,6 +768,14 @@ margin-left: 11em;
 #banner {
 	margin-left:auto;
 	margin-right:auto;	
+}
+#banner h2 {
+	float:left;
+	clear:left;
+	background-color:#000000;
+	color:#FFFFFF;
+	padding-right:5px;
+	padding-left:5px;
 }
 .sectTick {
 	width:450px;	
