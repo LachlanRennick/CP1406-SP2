@@ -46,7 +46,6 @@
     });
 </script>
 <script type="text/javascript" src="js/jssor.slider-20.min.js"></script>
-    <!-- use jssor.slider-20.debug.js instead for debug -->
     <script>
         jssor_1_slider_init = function() {
             
@@ -228,25 +227,31 @@
 		</div>
     </div>
 </div>
-<div class="fb-page" data-href="https://www.facebook.com/nqorchestra" data-width="340" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
-	<div class="fb-xfbml-parse-ignore">
-		<blockquote cite="https://www.facebook.com/nqorchestra">
-			<a href="https://www.facebook.com/nqorchestra">Barrier Reef Orchestra</a>
-		</blockquote>
-	</div>
+<div id="sectFbCal">
+    <div class="sectFB">
+        <div class="fb-page" data-href="https://www.facebook.com/nqorchestra" data-width="340" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true">
+            <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://www.facebook.com/nqorchestra">
+                    <a href="https://www.facebook.com/nqorchestra">Barrier Reef Orchestra</a>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="sectCal">
+        <div id="calendar">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+            <script src="js/jquery-ui-datepicker.min.js"></script>
+            <script>
+                $('#calendar').datepicker({
+                    inline: true,
+                    firstDay: 1,
+                    showOtherMonths: true,
+                    dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+                });
+            </script>
+        </div>
+    </div>
 </div>
-<div id="calendar"></div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="js/jquery-ui-datepicker.min.js"></script>
-<script>
-    $('#calendar').datepicker({
-        inline: true,
-        firstDay: 1,
-        showOtherMonths: true,
-        dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-    });
-</script>
-
 <div id="footer">
 	<ul>
     	<span class ="large">
