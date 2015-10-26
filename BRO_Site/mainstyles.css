@@ -715,7 +715,8 @@ margin-left: 11em;
 	padding-top:10px;	
 }
 .contact-title{
-	width:100px;
+	width:150px;
+	padding-top:5px;
 	display:inline-block;
 	text-align:right;
 	padding-right:25px;	
@@ -867,4 +868,9 @@ margin-left: 11em;
     float:left;
     clear:left;
     padding-bottom:50px;
+}
+#managementInfo ul {
+	list-style-type: none;
+	margin-left:139px;
+	margin-top:-16px;
 }
