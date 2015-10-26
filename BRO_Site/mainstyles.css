@@ -394,7 +394,13 @@ nav ul ul ul {
 	margin-left:-8px;
 	margin-right:-8px;	
 }
-@media (min-width:1000px) {
+@media (min-width:1200px) {
+    .section {
+        width: 1000px;
+    }
+    span.phone {display:none}
+}
+@media (min-width:1000px) and (max-width:1199px) {
     .section {
         width: 900px;
     }
@@ -563,6 +569,11 @@ nav ul ul ul {
 	}
 	.anouncements p {	
 		padding-left:10px;
+	}
+	/*Delete if text wrap isnt required*/
+	.anouncements img {
+		padding-right:20px;
+		margin-top:20px;	
 	}
 .longAnouncements {
     margin-bottom:25px;
