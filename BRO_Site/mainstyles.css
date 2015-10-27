@@ -618,7 +618,8 @@ nav ul ul ul {
 	position:fixed;
     top:0;
     width:100%;
-    margin:0px;	
+	margin-left:-10px;
+	padding-left:10px;
 	background-color:#fff;
 	height:200px;
 	padding-top:10px;
@@ -798,6 +799,11 @@ margin-left: 11em;
 	padding-right:5px;
 	padding-left:5px;
 }
+@media (max-width:399px) {
+		.sectTick p {
+			margin-left:-90px;	
+		}
+	}
 .sectTick {
 	width:450px;	
 	padding-top:60px;
@@ -848,26 +854,12 @@ margin-left: 11em;
         margin-top:50px;
     }
 }
-@media (min-width: 768px) {
-    .association {
-        width:75%;
-    }
-}
-@media (max-width: 880px) {
-    .association {
-        width:90%;
-    }
-}
-@media (min-width: 881px) {
-    .association {
-        width:70%;
-    }
-}
 .association {
     margin-bottom:25px;
     float:left;
     clear:left;
     padding-bottom:50px;
+	width:100%
 }
 #managementInfo ul {
 	list-style-type: none;
