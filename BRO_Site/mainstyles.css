@@ -62,8 +62,8 @@ body a:hover {
 		border-color: #FFFFFF;
 		border-right-width: thin;
 		margin-top: 3px;
-		padding-left: 2px;
-		padding-right:6px;
+		padding-left: 7px;
+		padding-right:10px;
 	}
 	#nav li {
 		display:inline;
