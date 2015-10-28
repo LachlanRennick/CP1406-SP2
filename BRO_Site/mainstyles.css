@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*Thankyou muchly to w3schools, many things that were self taught can be attributed to various sections of the w3schools website : http://www.w3schools.com*/
 body {
-	
+	font-family: 'Lato', sans-serif;
 }
 body a {
 	text-decoration: none;
@@ -328,7 +328,7 @@ nav ul ul ul {
 	}
 @media (max-width: 399px) {
 		#stripSection {
-			padding-top:200px;	
+			padding-top:200px;
 		}
 		span.norm {display:none}
 	}
@@ -337,6 +337,7 @@ nav ul ul ul {
 		margin-left:10px;
 		padding-right:10px;
 		padding-top:15px;
+		font-family: 'Crimson Text', serif;
 	}
 	#stripSection img {
 		float:left;	
@@ -346,7 +347,10 @@ nav ul ul ul {
 	#stripSection p {
 		float:left;	
 		padding-left:150px;
-		padding-top:27px;
+		padding-top:24px;
+		font-family: 'Crimson Text', serif;
+		font-size: 22px;
+
 	}
 @media (max-width: 950px) {
     span.lrg {display:none}
