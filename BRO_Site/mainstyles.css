@@ -1,4 +1,5 @@
 @charset "utf-8";
+/*Thankyou muchly to w3schools, many things that were self taught can be attributed to various sections of the w3schools website : http://www.w3schools.com*/
 body {
 	
 }
@@ -13,13 +14,9 @@ body a:hover {
 #logo {
 	position:absolute;	
 }
-/*Below is proposed fonts.. need to find more well used fonts to be sure it is available on most systems
-- Century Gothic (regular) for the navigation bar and the footer
-- Tahoma (bold) for the “Book tickets”/“Donate” buttons
-- Minion Pro (italic, bold, regular…) for all the rest
-*/
 
 /*This div features the Nav Bar*/
+/*This and all subsequent @media queries refer to enabling (or disabling) a css command based upon the size (width in this case) of the users media device*/
 @media (min-width: 1280px) {
 		span.sml-screen {display:none}
 		.large-screen {
@@ -27,7 +24,6 @@ body a:hover {
 		background-color: #000000;	
 		}
 	}
-/*Need to change 900px when appropiate size is found (this is location where nav bar collides with logo*/
 @media (min-width: 1000px) and (max-width: 1279px) {
 		span.sml-screen {display:none}
 		.medium-screen {
@@ -35,6 +31,7 @@ body a:hover {
 		background-color: #000000;	
 		}
 	}
+	/*Make it so that the user can't make screen smaller than 400px (regular smart phone)*/
 @media (max-width: 999px) {
     span.lrg-screen {display:none}
 }
@@ -335,9 +332,6 @@ nav ul ul ul {
 		}
 		span.norm {display:none}
 	}
-/*#stripSection {
-	color:#fff;	
-}*/
 	#stripSection h1 {
 		float:left;	
 		margin-left:10px;

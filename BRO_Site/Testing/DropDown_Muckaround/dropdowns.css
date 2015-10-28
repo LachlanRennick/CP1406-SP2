@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+	}
+	nav ul {
+		width:11em;
+		background: #fff; 
+		list-style: none;
+		float:right;
+		position: relative;
+		display: inline-table;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+	nav ul li {
+		float: left;
+}
+	nav ul li:hover {
+		background: #ffffff;
+	}
+		nav ul li:hover a {
+			color: #000000;
+		}
+	
+	nav ul li a {
+		display: block; padding-top: 5px;
+		color: #ffffff; text-decoration: none;
+		
+	}
+	nav ul ul {
+	background: #ffffff; 
+	border-radius: 0px; 
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+		position: relative;
+	}
+		nav ul ul li a {
+			padding: 15px 15px;
+			color: #ffffff;
+		}	
+			nav ul ul li a:hover {
+				background: #000000;
+				color:#ffffff;
+			}
+nav ul ul ul {
+	position: absolute;  top:0;
+}
+
+/*Thanks to Iggy*/
+/*How to make a dropdown using pure css -- http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu*/
