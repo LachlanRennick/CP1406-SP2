@@ -345,14 +345,15 @@ nav ul ul ul {
 		padding-bottom:5px;
 	}
 	#stripSection p {
-		float:left;	
-		padding-left:150px;
+		width:675px;
+		margin-left:auto;
+		margin-right:auto;
 		padding-top:24px;
 		font-family: 'Crimson Text', serif;
 		font-size: 22px;
 
 	}
-@media (max-width: 950px) {
+@media (max-width: 1150px) {
     span.lrg {display:none}
 }
 .whatsOnSection {
@@ -436,7 +437,7 @@ nav ul ul ul {
 }
 .section {
 	padding-top:20px;
-	margin-top:250px;
+	margin-top:290px;
 	margin-bottom:390px;
 	margin-left: auto;
 	margin-right: auto;
@@ -600,6 +601,10 @@ nav ul ul ul {
     .longAnouncements p {
         padding-left: 10px;
     }
+	.longAnouncements img {
+		padding-right:20px;
+		margin-top:20px;	
+	}
 @media (min-width:1600px) {
 	.anouncementsWatch {
 		width:40%;
@@ -637,12 +642,16 @@ nav ul ul ul {
 	z-index:+1;
 }
 #main {
+    position:fixed;
     top:0;
     width:100%;
-    margin:0px;	
+	margin-left:-10px;
+	padding-left:10px;
 	background-color:#fff;
-	height:150px;
+	height:200px;
 	padding-top:10px;
+	/*This index allows the java image gallery to fall behind the 'header' with the scroll up effect*/
+	z-index:+1;
 }
 @media (min-width:1000px){
     .formData {
