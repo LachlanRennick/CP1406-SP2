@@ -438,7 +438,7 @@ nav ul ul ul {
 .section {
 	padding-top:20px;
 	margin-top:290px;
-	margin-bottom:390px;
+	margin-bottom:200px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -884,4 +884,10 @@ margin-left: 11em;
 	list-style-type: none;
 	margin-left:139px;
 	margin-top:-16px;
+}
+#contactIMG {
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;	
 }
